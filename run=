@@ -3,8 +3,8 @@ $argv[1] = substr($argv[1], 1);
 $argv[1] = "66".$argv[1];
 
 if (!isset($argv[1]) || (isset($argv[2]) && !in_array(strtoupper($argv[2]), ["ข้อความ", "โทร", "ทั้งหมด"]))) {
-	echo "php run= <0990049618> <โทร>";
-	exit;20
+	echo "php run= <0900000000> <ข้อความ|โทร|ทั้งหมด>";
+	exit;
 } elseif (!isset($argv[2])) {
 	$argv[2] = "ข้อความ";
 }
